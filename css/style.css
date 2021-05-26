@@ -1,0 +1,550 @@
+/* 共通部分 */
+
+html{
+  font-size: 100%;
+}
+body{
+  font-family:"筑紫A丸ゴシック", san-sans-serif ;
+  line-height: 1.7;
+  color:#4D4D4D;
+}
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  object-fit: cover;
+}
+*{
+  margin: 0;
+}
+.wrapper{
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 1%;
+}
+
+a:hover{
+  opacity: .7;
+}
+
+.sp{
+  display: none;
+
+}
+
+
+
+/* HEADER */
+
+.header-head{
+  background-image: url(../images/sora.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header  .header-head >img{
+  width: 100%;
+  height: 920px;
+}
+.header-head h2{
+  text-align: center;
+}
+nav{
+  background-color: #D0F5FF;
+  padding: 32px 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+
+}
+nav ul li{
+  padding: 22px 37px;
+  border-left:solid 3px #28a6ff ;
+}
+nav ul li:last-child{
+  border-right:solid 3px #28a6ff ;
+
+}
+nav li a{
+  color: #4D4D4D;
+}
+/* ここまでHEADER */
+
+/* 4つの理念 */
+#philosophy img{
+  height: 1313px;
+}
+/* ここまで4つの理念 */
+
+/* お客様の声 */
+.message{
+  background-color: #d0f5ff;
+  text-align: center;
+}
+.message h1 {
+  padding: 32px 0 36px;
+  text-align: center;
+}
+
+.message .wrapper{
+  display: flex;
+  gap: 27px;
+  padding-bottom: 50px;
+}
+.message .wrapper >div{
+  width: 372px;
+  height: 490px;
+  background-color: #ffffff;
+}
+.message .wrapper> div img{
+  width: 92%;
+  height: 42%;
+  margin: 18px 15px 7px;
+
+}
+.message .wrapper >div h3{
+  width: 92%;
+  font-size: 31px;
+  color: #ffffff;
+  margin: 0 auto;
+  padding: 3px 0;
+  background-color: #28bdff;
+  text-align: center;
+
+}
+.message .wrapper> div p{
+  margin: 10px 15px 0;
+  font-size: 19px;
+  font-family: "筑紫A丸ゴシック W3";
+  line-height: 25px;
+  letter-spacing:-0.1em ;
+  text-align: left;
+}
+
+/* ここまでお客様の声 */
+
+/* ご利用方法 */
+#procedure img{
+  height: 595px;
+}
+/* ここまでご利用方法 */
+
+/* 症状例 */
+#example h1{
+  width: 593px;
+  font-size: 44px;
+  background-color: #28bdff;
+  color: #ffffff;
+  padding: 6px 0;
+  border-radius: 10px;
+  text-align: center;
+  margin: 95px auto 58px;
+
+}
+#example h2 {
+  text-align: center;
+}
+#example p{
+  text-align: center;
+  margin: 50px 0 120px;
+  font-size: 20px;
+}
+#example>img{
+  margin: 0 auto;
+}
+/* ここまで症状例 */
+
+/* 施術内容 */
+
+#effect img{
+  margin-top: 84px;
+  margin-bottom: 40px;
+}
+#effect h2{
+  text-align: center;
+  
+}
+/* ここまで施術内容 */
+
+/* 感染対策 */
+.title{
+  text-align: center;
+}
+#infection ul{
+  list-style: none;
+  margin: 20px 0 30px;
+}
+
+#infection li{
+  margin-left:5% ;
+  font-family: "ヒラギノ角ゴシックW2";
+  font-size: 18px;
+}
+/* ここまで感染対策 */
+
+/* お問い合わせフォーム */
+#contact{
+  margin-bottom: 100px;
+  margin-top: 132px;
+}
+#contact .title{
+  margin-bottom: 63px;
+}
+#contact p{
+  font-family: "ヒラギノ角ゴシックW2";
+  font-size: 18px;
+}
+form{
+  margin-top: 20px;
+}
+form div{
+  padding: 12px 0;
+  position: relative;
+  border-top: .7px solid #4D4D4D;
+}
+form div p{
+  display: inline-block;
+  margin-left: 45%;
+  
+}
+form div:nth-child(2n){
+  background-color: #f4f4f4;
+}
+.text-contact{
+  border-bottom: .7px solid #4D4D4D;
+  padding-bottom: 135px;
+}
+label{
+  font-size: 18px;
+  font-family: "ヒラギノ角ゴシックW2";
+  
+}
+form span{
+  font-family: "ヒラギノ角ゴシックW7";
+  background-color: #FF6600;
+  color:#ffffff;
+  padding: 7px 13px;
+  border-radius: 5px;
+  letter-spacing: 0.25em;
+  font-size: 16px;
+  margin-right: 15px;
+}/* 必須 */
+
+input[type="text"],input[type="tel"],input[type="email"]{
+  border: solid 0.7px #4d4d4d;
+  position: absolute;
+  left: 28%;
+  width: 35%;
+  font-size: 21px;
+
+}
+textarea{
+  position: absolute;
+  left: 28%;
+  width: 55%;
+  border: solid 0.7px #4d4d4d;
+  line-height: 14px;
+  font-size: 21px;
+  resize: none;
+}
+#contact section{
+  text-align: center;
+  margin-top: 38px;
+}/* 送信ボタン */
+
+input[type="image"]:hover{
+  opacity: .7;
+}
+
+/* ここまでお問い合わせフォーム */
+
+footer{
+  text-align: center;
+  font-size: 21px;
+  font-family:"ヒラギノ角ゴシックW3" ;
+  background-color: #28bdff;
+  color: #ffffff;
+  padding: 20px ;
+}
+footer p:first-child {
+  border-bottom: 1px solid #ffffff;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+footer a{
+  color: #ffffff;
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:1160px){
+  .wrapper{
+    max-width: 950px;
+  }
+  /* header */
+  header  .header-head >img{
+    height: 750px;
+  }
+  nav ul li{
+    padding: 18px 30px;
+  }
+  nav ul li a{
+    font-size: 14px;
+  }
+   /* ここまでheader */
+
+   /* 4つの理念 */
+  #philosophy img{
+    height: 1000px;
+  }
+  /* ここまで4つの理念 */
+
+  /* お客様の声 */
+  .message .wrapper div p{
+    font-size: 16px;
+    line-height: 22px;
+  }
+   /* ここまでお客様の声 */
+
+   /* ご利用方法 */
+  #procedure img{
+    height: 400px;
+  }
+   /* ここまでご利用方法 */
+}
+@media(max-width:900px){
+  .wrapper{
+    max-width: 700px;
+  }
+  /* header */
+  header  .header-head >img{
+    height: auto;
+  }
+  nav ul li{
+    padding: 12px 23px;
+  }
+  nav ul li a{
+    font-size: 10px;
+  }
+   /* ここまでheader */
+
+   /* 4つの理念 */
+  #philosophy img{
+    height: 610px;
+  }
+  /* ここまで4つの理念 */
+
+  /* お客様の声 */
+  .message .wrapper div p{
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .message .wrapper{
+    flex-direction: column;
+    align-items: center;
+  }
+  .message .wrapper >div{
+    width: 90%;
+    height: auto;
+    display: flex;
+  }
+  .message .wrapper >div img{
+    width: 40%;
+    height: auto;
+  }
+  .message .wrapper p{
+    padding: 0 0 10px 0;
+  }
+  .message .wrapper h3{
+    margin: 15px auto 0 !important;
+  }
+ 
+   /* ここまでお客様の声 */
+
+   /* ご利用方法 */
+  #procedure img{
+    height: auto;
+  }
+   /* ここまでご利用方法 */
+
+   input[type="text"],input[type="tel"],input[type="email"]{
+     
+     position: absolute;
+     left: 40%;
+   }
+   form div{
+     flex-direction: column;
+   }
+   textarea{
+     position: absolute;
+     left: 40%;
+   }
+}
+@media(max-width:700px){
+  
+  /* header */
+  header  .header-head >img{
+    height: 400px;
+  }
+  nav ul li{
+    padding: 6px 10px;
+  }
+  nav ul li a{
+    font-size: 10px;
+  }
+   /* ここまでheader */
+
+   /* 4つの理念 */
+  #philosophy img{
+    height: 520px;
+  }
+  /* ここまで4つの理念 */
+
+  /* お客様の声 */
+  .message .wrapper div p{
+    font-size: 16px;
+    line-height: 22px;
+  }
+   /* ここまでお客様の声 */
+
+   /* ご利用方法 */
+  #procedure img{
+    height: 300px;
+  }
+   /* ここまでご利用方法 */
+
+   input[type="text"],input[type="tel"],input[type="email"]{
+     
+     position: absolute;
+     left: 40%;
+   }
+   form div{
+     flex-direction: column;
+   }
+   textarea{
+     position: absolute;
+     left: 40%;
+   }
+   #example h1{
+     width: 80%;
+     font-size:28px ;
+   }
+   #infection ul{
+     padding-left:0 ;
+   }
+}
+@media(max-width:600px){
+  .pc{
+    display: none;
+  }
+  .sp{
+    display: block;
+  }
+   #example p br{
+     display: none;
+   }
+   #example p{
+     padding: 0 5%;
+     text-align: left;
+     font-size: 16px;
+
+   }
+  .a{
+    width: 80% ;
+  }
+  header  .header-head >img{
+    height: auto;
+  }
+  #philosophy img{
+    height: auto;
+  }
+  #procedure img{
+    height: auto;
+  }
+  .message .wrapper{
+    display: none !important;
+  }
+  .message .sp{
+    padding: 0 5% 5%;
+    width: 90%;
+  }
+  #effect h2 img{
+    width: 60%;
+    margin: 0;
+  }
+  #infection li{
+    margin-right: 5%;
+    font-size: 16px;
+  }
+  form div{
+    padding: 12px 0 40px 10px;
+  }
+  input[type="text"],input[type="tel"],input[type="email"]{
+    top: 50px;
+    left: 10px;
+    width: 80%;
+  }
+  textarea{
+    top: 50px;
+    left: 10px;
+    width: 80%;
+  }
+  .text-contact{
+    padding-bottom: 180px;
+  }
+  form div p{
+    display: inline;
+    margin-left: 0;
+  }
+  .btn{
+    width: 80%;
+  }
+  .title img{
+    width: 60%;
+    
+  }
+}
+
+@media(max-width:520px){
+  nav ul li{
+    padding: 0 7px;
+    
+  }
+
+  
+  nav ul li a {
+    font-size: 8px;
+    letter-spacing: -2px;
+}
+header  .header-head >img{
+  height: auto;
+}
+#philosophy img{
+  height: 360px;
+}
+
+#example h1{
+  font-size: 20px;
+  margin: 60px auto 20px;
+}
+footer p{
+  font-size: 16px;
+}
+}
+@media(max-width:410px){
+  nav ul li{
+    padding: 0 3px;
+    
+  }
+}
+
