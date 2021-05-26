@@ -519,6 +519,9 @@ footer a{
 }
 
 @media(max-width:520px){
+  nav ul{
+    justify-content: space-between;
+  }
   nav ul li{
     padding: 0 8px;
     
